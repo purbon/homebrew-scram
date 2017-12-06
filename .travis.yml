@@ -1,0 +1,11 @@
+os: osx
+
+install:
+    - brew tap rakhimov/scram
+    - brew install scram
+
+script:
+    - which scram
+    - which scram-gui
+    - scram --version
+    - scram --help
