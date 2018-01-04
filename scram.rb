@@ -3,9 +3,8 @@ class Scram < Formula
   homepage "https://scram-pra.org"
   # Needs to pull submodules to get the customized Tango iconset for Mac.
   url "https://github.com/rakhimov/scram.git",
-    :revision => "cccecbf9286a6aee945538ca4dd9141f64714f79",
-    :tag => "0.16.0"
-  revision 1
+    :revision => "e9123df56206cc878ff7901097e1ffff6a13353f",
+    :tag => "0.16.1"
 
   head "https://github.com/rakhimov/scram.git"
 
@@ -19,9 +18,7 @@ class Scram < Formula
 
   def install
     mkdir "build" do
-      args = std_cmake_args
-      args << "-DBUILD_SHARED_LIBS=ON" << "-DBUILD_TESTS=OFF"
-      system "cmake", "..", *args
+      system "cmake", "..", *std_cmake_args
       system "make", "install"
     end
   end
