@@ -8,7 +8,7 @@ class Scram < Formula
 
   head "https://github.com/rakhimov/scram.git"
 
-  needs :cxx14
+  #needs :cxx14
 
   depends_on "cmake" => :build
   depends_on "boost"
