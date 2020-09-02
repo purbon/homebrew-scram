@@ -3,8 +3,8 @@ class Scram < Formula
   homepage "https://scram-pra.org"
   # Needs to pull submodules to get the customized Tango iconset for Mac.
   url "https://github.com/rakhimov/scram.git",
-    :revision => "e9123df56206cc878ff7901097e1ffff6a13353f",
-    :tag => "0.16.1"
+    :revision => "9c9a75ca0c5c2fbb5b4a7d32e29fd25bf90f7bab",
+    :tag => "0.16.2"
 
   head "https://github.com/rakhimov/scram.git"
 
